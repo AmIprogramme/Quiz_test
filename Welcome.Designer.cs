@@ -38,6 +38,7 @@
             Forth_radio = new RadioButton();
             third_radio = new RadioButton();
             second_radio = new RadioButton();
+            btn_next_question = new Button();
             panel_general.SuspendLayout();
             gb_for_new_page.SuspendLayout();
             SuspendLayout();
@@ -104,11 +105,12 @@
             gb_for_new_page.Controls.Add(third_radio);
             gb_for_new_page.Controls.Add(second_radio);
             gb_for_new_page.Controls.Add(first_radio);
-            gb_for_new_page.Location = new Point(372, 411);
+            gb_for_new_page.Location = new Point(12, 411);
             gb_for_new_page.Name = "gb_for_new_page";
             gb_for_new_page.Size = new Size(168, 33);
             gb_for_new_page.TabIndex = 1;
             gb_for_new_page.TabStop = false;
+            gb_for_new_page.Visible = false;
             // 
             // Fifth_radio
             // 
@@ -149,18 +151,30 @@
             second_radio.UseVisualStyleBackColor = true;
             second_radio.CheckedChanged += second_radio_CheckedChanged;
             // 
+            // btn_next_question
+            // 
+            btn_next_question.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
+            btn_next_question.Font = new Font("MS Gothic", 15.75F);
+            btn_next_question.Location = new Point(374, 412);
+            btn_next_question.Name = "btn_next_question";
+            btn_next_question.Size = new Size(181, 33);
+            btn_next_question.TabIndex = 3;
+            btn_next_question.Text = "Next question";
+            btn_next_question.UseVisualStyleBackColor = true;
+            btn_next_question.Click += btn_next_question_Click;
+            // 
             // Welcome
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LemonChiffon;
             ClientSize = new Size(944, 450);
+            Controls.Add(btn_next_question);
             Controls.Add(gb_for_new_page);
             Controls.Add(panel_general);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Name = "Welcome";
             Text = "Form1";
-
             panel_general.ResumeLayout(false);
             panel_general.PerformLayout();
             gb_for_new_page.ResumeLayout(false);
@@ -180,5 +194,6 @@
         private Label label1;
         private Button score_btn;
         private Button start_btn;
+        private Button btn_next_question;
     }
 }

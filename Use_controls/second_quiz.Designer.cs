@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             label2 = new Label();
-            listBox1 = new ListBox();
-            button4 = new Button();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            txt_quiestion_generated = new TextBox();
+            GB_buttons = new GroupBox();
+            btn_aswer_4 = new Button();
+            btn_aswer_3 = new Button();
+            btn_aswer_2 = new Button();
+            btn_aswer_1 = new Button();
+            GB_buttons.SuspendLayout();
             SuspendLayout();
             // 
             // label2
@@ -46,77 +48,90 @@
             label2.TabIndex = 2;
             label2.Text = "Second Quiz";
             // 
-            // listBox1
+            // txt_quiestion_generated
             // 
-            listBox1.Anchor = AnchorStyles.Top;
-            listBox1.BackColor = Color.LemonChiffon;
-            listBox1.Font = new Font("MS Gothic", 14F);
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 19;
-            listBox1.Items.AddRange(new object[] { "El oeoe" });
-            listBox1.Location = new Point(223, 37);
-            listBox1.Name = "listBox1";
-            listBox1.RightToLeft = RightToLeft.Yes;
-            listBox1.Size = new Size(475, 61);
-            listBox1.TabIndex = 10;
+            txt_quiestion_generated.BackColor = SystemColors.InactiveCaptionText;
+            txt_quiestion_generated.Font = new Font("JetBrains Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txt_quiestion_generated.ForeColor = Color.Green;
+            txt_quiestion_generated.Location = new Point(226, 29);
+            txt_quiestion_generated.Multiline = true;
+            txt_quiestion_generated.Name = "txt_quiestion_generated";
+            txt_quiestion_generated.ReadOnly = true;
+            txt_quiestion_generated.Size = new Size(471, 119);
+            txt_quiestion_generated.TabIndex = 6;
             // 
-            // button4
+            // GB_buttons
             // 
-            button4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button4.Font = new Font("Segoe UI", 11F);
-            button4.Location = new Point(311, 289);
-            button4.Name = "button4";
-            button4.Size = new Size(286, 42);
-            button4.TabIndex = 9;
-            button4.Text = "button4";
-            button4.UseVisualStyleBackColor = true;
+            GB_buttons.Controls.Add(btn_aswer_4);
+            GB_buttons.Controls.Add(btn_aswer_3);
+            GB_buttons.Controls.Add(btn_aswer_2);
+            GB_buttons.Controls.Add(btn_aswer_1);
+            GB_buttons.Enabled = false;
+            GB_buttons.Location = new Point(256, 150);
+            GB_buttons.Name = "GB_buttons";
+            GB_buttons.Size = new Size(411, 199);
+            GB_buttons.TabIndex = 8;
+            GB_buttons.TabStop = false;
             // 
-            // button3
+            // btn_aswer_4
             // 
-            button3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button3.Font = new Font("Segoe UI", 11F);
-            button3.Location = new Point(311, 241);
-            button3.Name = "button3";
-            button3.Size = new Size(286, 42);
-            button3.TabIndex = 8;
-            button3.Text = "button3";
-            button3.UseVisualStyleBackColor = true;
+            btn_aswer_4.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            btn_aswer_4.Font = new Font("Segoe UI", 11F);
+            btn_aswer_4.Location = new Point(66, 148);
+            btn_aswer_4.Name = "btn_aswer_4";
+            btn_aswer_4.Size = new Size(296, 42);
+            btn_aswer_4.TabIndex = 4;
+            btn_aswer_4.Text = "button4";
+            btn_aswer_4.UseVisualStyleBackColor = true;
+            btn_aswer_4.Click += btn_aswer_4_Click;
             // 
-            // button2
+            // btn_aswer_3
             // 
-            button2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button2.Font = new Font("Segoe UI", 11F);
-            button2.Location = new Point(311, 193);
-            button2.Name = "button2";
-            button2.Size = new Size(286, 42);
-            button2.TabIndex = 7;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btn_aswer_3.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            btn_aswer_3.Font = new Font("Segoe UI", 11F);
+            btn_aswer_3.Location = new Point(66, 100);
+            btn_aswer_3.Name = "btn_aswer_3";
+            btn_aswer_3.Size = new Size(296, 42);
+            btn_aswer_3.TabIndex = 3;
+            btn_aswer_3.Text = "button3";
+            btn_aswer_3.UseVisualStyleBackColor = true;
+            btn_aswer_3.Click += btn_aswer_3_Click;
             // 
-            // button1
+            // btn_aswer_2
             // 
-            button1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            button1.Font = new Font("Segoe UI", 11F);
-            button1.Location = new Point(311, 145);
-            button1.Name = "button1";
-            button1.Size = new Size(286, 42);
-            button1.TabIndex = 6;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            btn_aswer_2.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            btn_aswer_2.Font = new Font("Segoe UI", 11F);
+            btn_aswer_2.Location = new Point(66, 52);
+            btn_aswer_2.Name = "btn_aswer_2";
+            btn_aswer_2.Size = new Size(296, 42);
+            btn_aswer_2.TabIndex = 2;
+            btn_aswer_2.Text = "button2";
+            btn_aswer_2.UseVisualStyleBackColor = true;
+            btn_aswer_2.Click += btn_aswer_2_Click;
+            // 
+            // btn_aswer_1
+            // 
+            btn_aswer_1.Anchor = AnchorStyles.Left | AnchorStyles.Right;
+            btn_aswer_1.Font = new Font("Segoe UI", 11F);
+            btn_aswer_1.Location = new Point(66, 4);
+            btn_aswer_1.Name = "btn_aswer_1";
+            btn_aswer_1.Size = new Size(296, 42);
+            btn_aswer_1.TabIndex = 1;
+            btn_aswer_1.Text = "button1";
+            btn_aswer_1.UseVisualStyleBackColor = true;
+            btn_aswer_1.Click += btn_aswer_1_Click;
             // 
             // second_quiz
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LemonChiffon;
-            Controls.Add(listBox1);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(GB_buttons);
+            Controls.Add(txt_quiestion_generated);
             Controls.Add(label2);
             Name = "second_quiz";
             Size = new Size(920, 369);
+            GB_buttons.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -124,10 +139,11 @@
         #endregion
 
         private Label label2;
-        private ListBox listBox1;
-        private Button button4;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private TextBox txt_quiestion_generated;
+        private GroupBox GB_buttons;
+        private Button btn_aswer_4;
+        private Button btn_aswer_3;
+        private Button btn_aswer_2;
+        private Button btn_aswer_1;
     }
 }
