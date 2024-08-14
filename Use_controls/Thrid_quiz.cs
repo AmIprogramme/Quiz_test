@@ -19,9 +19,10 @@ namespace Quiz.Use_controls
 
         private List<Answers_and_Questions> list_for_contest = new List<Answers_and_Questions>();
 
+        private static Welcome object_welcome = new Welcome();
+
         private delegate void D_Write_question(String message);
         #endregion
-
 
         public Thrid_quiz()
         {
@@ -42,23 +43,30 @@ namespace Quiz.Use_controls
             // Declare "array_mix_questions" for prepare for the test.
             array_mix_questions = object_for_mix.return_of_elements_mixed(list_for_contest);
 
-            if (array_mix_questions != null)
-            {
-                btn_aswer_1.Text = array_mix_questions.Wrong_Answers![0];
-                btn_aswer_2.Text = array_mix_questions.Wrong_Answers![1];
-                btn_aswer_3.Text = array_mix_questions.Wrong_Answers![2];
-                btn_aswer_4.Text = array_mix_questions.Wrong_Answers![3];
+            bool end_start_question = true;
 
-                /*Thread td = new Thread(() => dq(array_mix_questions.Main_question!));
-                td.Start();*/
-
-                Task.Run(() => write_question(array_mix_questions.Main_question!));
-                GB_buttons.Invoke(new Action(() => GB_buttons.Enabled = true));
-            }
-            else
+            do
             {
-                MessageBox.Show("The Array is null");
-            }
+                if (array_mix_questions != null)
+                {
+                    btn_aswer_1.Text = array_mix_questions.Wrong_Answers![0];
+                    btn_aswer_2.Text = array_mix_questions.Wrong_Answers![1];
+                    btn_aswer_3.Text = array_mix_questions.Wrong_Answers![2];
+                    btn_aswer_4.Text = array_mix_questions.Wrong_Answers![3];
+
+                    /*Thread td = new Thread(() => dq(array_mix_questions.Main_question!));
+                    td.Start();*/
+
+                    Task.Run(() => write_question(array_mix_questions.Main_question!));
+                    GB_buttons.Invoke(new Action(() => GB_buttons.Enabled = true));
+                    end_start_question = false;
+                }
+                else
+                {
+                    //MessageBox.Show("The Array is null");
+                }
+
+            } while (end_start_question);
         }
         #endregion
 
@@ -81,6 +89,11 @@ namespace Quiz.Use_controls
             //GB_buttons.Invoke(new Action(() => GB_buttons.Enabled = true));
         }
         #endregion
+
+        public static void return_of_instance_Welcome(Welcome i)
+        {
+            object_welcome = i;
+        }
 
         #region Buttons
         private void btn_aswer_1_Click(object sender, EventArgs e)
@@ -182,7 +195,6 @@ namespace Quiz.Use_controls
         }
         #endregion
 
-
         #region Remove and return list modified
         private void remove_the_question_made_and_return_list_modified()
         {
@@ -190,7 +202,6 @@ namespace Quiz.Use_controls
             object_for_mix.rest_maxvalue();
             GB_buttons.Enabled = false;
 
-            Welcome object_welcome = new Welcome();
             object_welcome.return_of_questions_modified(list_for_contest);
 
             //MessageBox.Show($"The position object: {object_for_mix.Number_rm} has been removed");

@@ -95,7 +95,6 @@
             first_radio.TabIndex = 0;
             first_radio.TabStop = true;
             first_radio.UseVisualStyleBackColor = true;
-            first_radio.CheckedChanged += first_radio_CheckedChanged;
             // 
             // gb_for_new_page
             // 
@@ -129,7 +128,6 @@
             Forth_radio.Size = new Size(14, 13);
             Forth_radio.TabIndex = 3;
             Forth_radio.UseVisualStyleBackColor = true;
-            Forth_radio.CheckedChanged += Forth_radio_CheckedChanged;
             // 
             // third_radio
             // 
@@ -139,7 +137,6 @@
             third_radio.Size = new Size(14, 13);
             third_radio.TabIndex = 2;
             third_radio.UseVisualStyleBackColor = true;
-            third_radio.CheckedChanged += third_radio_CheckedChanged;
             // 
             // second_radio
             // 
@@ -149,7 +146,6 @@
             second_radio.Size = new Size(14, 13);
             second_radio.TabIndex = 1;
             second_radio.UseVisualStyleBackColor = true;
-            second_radio.CheckedChanged += second_radio_CheckedChanged;
             // 
             // btn_next_question
             // 
@@ -161,6 +157,7 @@
             btn_next_question.TabIndex = 3;
             btn_next_question.Text = "Next question";
             btn_next_question.UseVisualStyleBackColor = true;
+            btn_next_question.Visible = false;
             btn_next_question.Click += btn_next_question_Click;
             // 
             // Welcome

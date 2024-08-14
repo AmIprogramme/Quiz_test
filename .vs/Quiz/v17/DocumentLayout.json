@@ -3,28 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\use_controls\\first_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:use_controls\\first_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5361F805-2014-4655-A0D9-1D318644256F}|..\\layer_ask_manager\\layer_ask_manager.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\layer_ask_manager\\questions_generator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5361F805-2014-4655-A0D9-1D318644256F}|..\\layer_ask_manager\\layer_ask_manager.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\layer_ask_manager\\mixer_questions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\use_controls\\thrid_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:use_controls\\thrid_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\use_controls\\first_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:use_controls\\first_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\use_controls\\second_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:use_controls\\second_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\use_controls\\first_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:use_controls\\first_quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|c:\\users\\lab estudiante\\documents\\programando con c#\\quiz\\welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D03302B-E67E-4E0F-967D-AA7A0AF865F8}|Quiz.csproj|solutionrelative:welcome.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +28,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Thrid_quiz.cs",
-              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\Thrid_quiz.cs",
-              "RelativeDocumentMoniker": "Use_controls\\Thrid_quiz.cs",
-              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\Thrid_quiz.cs",
-              "RelativeToolTip": "Use_controls\\Thrid_quiz.cs",
-              "ViewState": "AQIAALIAAAAAAAAAAAAowMYAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T17:08:47.55Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "second_quiz.cs",
-              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\second_quiz.cs",
-              "RelativeDocumentMoniker": "Use_controls\\second_quiz.cs",
-              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\second_quiz.cs",
-              "RelativeToolTip": "Use_controls\\second_quiz.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAABoAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T17:01:57.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Welcome.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Welcome.cs",
-              "RelativeDocumentMoniker": "Welcome.cs",
-              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Welcome.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Welcome.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:38:21.653Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "first_quiz.cs",
               "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\first_quiz.cs",
               "RelativeDocumentMoniker": "Use_controls\\first_quiz.cs",
               "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\first_quiz.cs",
               "RelativeToolTip": "Use_controls\\first_quiz.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAgwLkAAAAAAAAA",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAowF0AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:33:53.564Z",
+              "WhenOpened": "2024-08-14T01:36:55.828Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "first_quiz.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\first_quiz.cs",
-              "RelativeDocumentMoniker": "Use_controls\\first_quiz.cs",
-              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\first_quiz.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Use_controls\\first_quiz.cs [Dise\u00F1o]",
+              "DocumentIndex": 3,
+              "Title": "Thrid_quiz.cs",
+              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\Thrid_quiz.cs",
+              "RelativeDocumentMoniker": "Use_controls\\Thrid_quiz.cs",
+              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Use_controls\\Thrid_quiz.cs",
+              "RelativeToolTip": "Use_controls\\Thrid_quiz.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwM0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T16:33:34.223Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-08-13T22:20:01.13Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Welcome.cs",
               "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Welcome.cs",
               "RelativeDocumentMoniker": "Welcome.cs",
               "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\Quiz\\Welcome.cs",
               "RelativeToolTip": "Welcome.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAAAF0AAAAJAAAA",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAgwGEAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-05T20:01:34.26Z",
+              "WhenOpened": "2024-08-13T22:19:24.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mixer_questions.cs",
+              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\layer_ask_manager\\Mixer_questions.cs",
+              "RelativeDocumentMoniker": "..\\layer_ask_manager\\Mixer_questions.cs",
+              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\layer_ask_manager\\Mixer_questions.cs",
+              "RelativeToolTip": "..\\layer_ask_manager\\Mixer_questions.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T22:05:31.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Questions_generator.cs",
+              "DocumentMoniker": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\layer_ask_manager\\Questions_generator.cs",
+              "RelativeDocumentMoniker": "..\\layer_ask_manager\\Questions_generator.cs",
+              "ToolTip": "C:\\Users\\Lab Estudiante\\Documents\\Programando con c#\\layer_ask_manager\\Questions_generator.cs",
+              "RelativeToolTip": "..\\layer_ask_manager\\Questions_generator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJ8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T22:05:12.857Z",
               "EditorCaption": ""
             }
           ]
