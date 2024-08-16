@@ -24,3 +24,4 @@ C:\Users\Lab Estudiante\Documents\Programando con c#\Quiz\bin\Debug\net8.0-windo
 C:\Users\Lab Estudiante\Documents\Programando con c#\Quiz\obj\Debug\net8.0-windows\Quiz.csproj.AssemblyReference.cache
 C:\Users\Lab Estudiante\Documents\Programando con c#\Quiz\obj\Debug\net8.0-windows\Quiz.sourcelink.json
 C:\Users\Lab Estudiante\Documents\Programando con c#\Quiz\obj\Debug\net8.0-windows\Quiz.csproj.Up2Date
+C:\Users\Lab Estudiante\Documents\Programando con c#\Quiz\obj\Debug\net8.0-windows\Quiz.Use_controls.Results.resources

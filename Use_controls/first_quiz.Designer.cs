@@ -34,7 +34,6 @@
             btn_aswer_3 = new Button();
             btn_aswer_4 = new Button();
             txt_quiestion_generated = new TextBox();
-            reload = new Button();
             GB_buttons = new GroupBox();
             GB_buttons.SuspendLayout();
             SuspendLayout();
@@ -109,18 +108,6 @@
             txt_quiestion_generated.Size = new Size(471, 119);
             txt_quiestion_generated.TabIndex = 5;
             // 
-            // reload
-            // 
-            reload.Anchor = AnchorStyles.Left | AnchorStyles.Right;
-            reload.Font = new Font("Segoe UI", 11F);
-            reload.Location = new Point(759, 29);
-            reload.Name = "reload";
-            reload.Size = new Size(131, 42);
-            reload.TabIndex = 6;
-            reload.Text = "Other question";
-            reload.UseVisualStyleBackColor = true;
-            reload.Click += reload_Click;
-            // 
             // GB_buttons
             // 
             GB_buttons.Controls.Add(btn_aswer_4);
@@ -140,7 +127,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LemonChiffon;
             Controls.Add(GB_buttons);
-            Controls.Add(reload);
             Controls.Add(txt_quiestion_generated);
             Controls.Add(label1);
             Name = "first_quiz";
@@ -158,7 +144,6 @@
         private Button btn_aswer_3;
         private Button btn_aswer_4;
         private TextBox txt_quiestion_generated;
-        private Button reload;
         private GroupBox GB_buttons;
     }
 }
