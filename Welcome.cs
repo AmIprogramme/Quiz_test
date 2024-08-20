@@ -1,82 +1,96 @@
 using Quiz.Use_controls;
 using layer_ask_manager;
-using System.Diagnostics;
 
 namespace Quiz
 {
     public partial class Welcome : Form
     {
+
+        #region Global variables
+
+            #region Use control variables
+        private Main_menu m_menu = new Main_menu();
         private first_quiz f_quiz = new first_quiz();
         private second_quiz s_quiz = new second_quiz();
         private Thrid_quiz thr_quiz = new Thrid_quiz();
         private Forth_quiz four_quiz = new Forth_quiz();
         private Results _Results = new Results();
 
+        #endregion
+
+            #region Other variables
         private List<Answers_and_Questions>? list_for_contest = new List<Answers_and_Questions>();
-        
+        // With this list we use it in all the quiz a establish between the main form.
+
         private Score_records table_of_score_achieve = new Score_records();
+        // Also, the list will be follow with the table score in all moment.
 
         private static int position_quiz = 0;
+        // This variable gonna be used at the end of any process ended the quiz.
+
+        #endregion
+
+        #endregion
 
         public Welcome()
         {
             InitializeComponent();
+            install_Main_menu();
         }
-
+        #region Function for shut, delete and update panel
         public void shut_useControl()
         {
-            // Remover todos los UserControl del panel_general
-            foreach (Control control in panel_general.Controls)
-            {
-                if (control is UserControl)
-                {
-                    panel_general.Controls.Remove(control);
-                    control.Dispose(); // Liberar recursos del UserControl
-                }
-            }
-
-            // Mostrar el formulario Welcome o traerlo al frente si ya está abierto
-            Welcome mainMenu = Application.OpenForms.OfType<Welcome>().FirstOrDefault()!;
-
-            if (mainMenu == null)
-            {
-                mainMenu = new Welcome();
-                mainMenu.Show();
-            }
-            else
-            {
-                mainMenu.BringToFront();
-            }
+            // Here we restoring any single variable used during our contest.
             f_quiz = new first_quiz();
             s_quiz = new second_quiz();
             thr_quiz = new Thrid_quiz();
             four_quiz = new Forth_quiz();
             _Results = new Results();
             table_of_score_achieve = new Score_records();
-        }
 
+            position_quiz = 0; // Restoring the position for open the Use controls
+
+            
+            panel_general.Controls.Clear(); /* Clean all element in the panel and then install
+                                             again the main menu*/ 
+            install_Main_menu();
+
+        }
+        #endregion
+
+        #region Function return and modificate list and score table
         public void return_of_questions_modified(List<Answers_and_Questions> returned, Score_records tsa)
         {
-            table_of_score_achieve = tsa;
+            /*The use of variable avoinding the static caracteristics elements, is implemented
+             the use of copies and modifications. During the main form, is declared the list of 
+            questions and score separated, and then during the quiz code it returns those elements
+            modificated for the next quiz and repeat the process.
+            */
+            table_of_score_achieve = tsa; // tsa means Table of Score Achieve
             list_for_contest = returned;
-            btn_next_question.Visible = true;
-        }
 
-        private void RemoveControlFromPanel(Control control, Panel panel)
-        {
-            if (panel.Controls.Contains(control))
-            {
-                panel.Controls.Remove(control);
-                control.Dispose(); // Libera los recursos del control
-            }
+            btn_next_question.Visible = true; // Finished here, the process open the button for next question.
         }
+        #endregion
 
-        private void button1_Click(object sender, EventArgs e)
+        #region Function Install Main Menu
+        protected void install_Main_menu() 
         {
-            
+            m_menu.return_of_instance_Welcome(this);
+            // It sends the instance for modificate the elements in our present form
+
+            panel_general.Controls.Add(m_menu); // Add the element of Main_menu to the panel.
+
+            f_quiz.Dock = DockStyle.Fill;
+            f_quiz.BringToFront();
+        }
+        #endregion
+
+        #region Function start quiz
+        public void start_quiz()
+        {
             list_for_contest = Questions_generator.Initialize();
-
-            //Thread.Sleep(800);
+ 
             first_quiz.return_of_instance_Welcome(this);
 
             panel_general.Controls.Add(f_quiz);
@@ -84,13 +98,14 @@ namespace Quiz
             f_quiz.BringToFront();
 
             f_quiz.declare_the_list(list_for_contest!, table_of_score_achieve);
-            //Thread.Sleep(500);
+           
             f_quiz.start_the_questions();
-            
+
         }
+        #endregion
 
         #region Functions for open the Usecontrol 
-        private void Open_second_panel() 
+        private void Open_second_panel()
         {
             second_quiz.return_of_instance_Welcome(this);
             panel_general.Controls.Add(s_quiz);
@@ -103,7 +118,7 @@ namespace Quiz
             s_quiz.start_the_questions();
         }
 
-        private void Open_thrid_panel() 
+        private void Open_thrid_panel()
         {
             Thrid_quiz.return_of_instance_Welcome(this);
 
@@ -117,7 +132,7 @@ namespace Quiz
             thr_quiz.start_the_questions();
         }
 
-        private void Open_fourth_panel() 
+        private void Open_fourth_panel()
         {
             Forth_quiz.return_of_instance_Welcome(this);
             panel_general.Controls.Add(four_quiz);
@@ -140,17 +155,20 @@ namespace Quiz
         }
         #endregion
 
+        #region Button for update next question
         private void btn_next_question_Click(object sender, EventArgs e)
         {
             btn_next_question.Visible = false;
+            
             position_quiz++;
-            switch (position_quiz) 
+
+            switch (position_quiz)
             {
                 case 1:
                     Open_second_panel();
                     break;
                 case 2:
-                   Open_thrid_panel();
+                    Open_thrid_panel();
                     break;
                 case 3:
                     Open_fourth_panel();
@@ -163,23 +181,13 @@ namespace Quiz
                     break;
                 case 5:
                     position_quiz = 0;
-                    //RemoveControlFromPanel(this, panel_general);
                     shut_useControl();
                     break;
-          
+
             }
 
         }
+        #endregion
+
     }
 }
-/*
-           UserControl1 jpanel = new UserControl1();
-
-           if (panel_de_prueba.Contains(jpanel) == false)
-           {
-               panel_de_prueba.Controls.Add(jpanel);
-               jpanel.Dock = DockStyle.Fill;
-               jpanel.BringToFront();
-           }
-           else {jpanel.BringToFront(); }
-           */

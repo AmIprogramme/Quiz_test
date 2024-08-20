@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Quiz/1.0.0": {
+        "dependencies": {
+          "layer_ask_manager": "1.0.0"
+        },
+        "runtime": {
+          "Quiz.dll": {}
+        }
+      },
+      "layer_ask_manager/1.0.0": {
+        "runtime": {
+          "layer_ask_manager.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Quiz/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "layer_ask_manager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

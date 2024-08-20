@@ -18,9 +18,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Use_controls\Results.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
+    <Compile Update="Use_controls\Main_menu.cs" />
+    <Compile Update="Use_controls\Results.cs" />
   </ItemGroup>
 
   <ItemGroup>

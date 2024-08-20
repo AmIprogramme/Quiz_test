@@ -2,16 +2,6 @@
 
 namespace Quiz.Use_controls
 {
-    /*
-            if (this.Parent != null)
-            {
-                //this.Parent.Controls.Remove(this);
-                //this.Visible = false;
-
-                //this.Dispose();
-
-                
-            }*/
     public partial class first_quiz : UserControl
     {
         #region Variables and delegates
@@ -45,9 +35,6 @@ namespace Quiz.Use_controls
         #region Start questions
         public void start_the_questions()
         {
-            // This is a delegate 
-           // D_Write_question dq = new D_Write_question(write_question);
-
             // Declare "array_mix_questions" for prepare for the test.
             array_mix_questions = object_for_mix.return_of_elements_mixed(list_for_contest);
 

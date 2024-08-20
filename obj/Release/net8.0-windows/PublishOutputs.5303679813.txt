@@ -1,0 +1,7 @@
+C:\Users\Lab Estudiante\Desktop\Quiz.exe
+C:\Users\Lab Estudiante\Desktop\Quiz.dll
+C:\Users\Lab Estudiante\Desktop\Quiz.deps.json
+C:\Users\Lab Estudiante\Desktop\Quiz.runtimeconfig.json
+C:\Users\Lab Estudiante\Desktop\Quiz.pdb
+C:\Users\Lab Estudiante\Desktop\layer_ask_manager.dll
+C:\Users\Lab Estudiante\Desktop\layer_ask_manager.pdb
